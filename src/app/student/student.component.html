@@ -1,0 +1,246 @@
+<!-- AUTHOR: Srivedaa Chinthalapani
+     This is the survey html page
+-->
+
+<body>
+  <form [formGroup]="scheduleForm" (ngSubmit)="onSubmit()" name='scheduleForm' id="scheduleId">
+    <div class="surveyDetails" *ngIf="showSuccess">
+      <div>
+        <h1 class="surveyForm" style="width:470px;">CS Department Survey Form</h1>
+        <div class="survey-Details">
+        <div class="nameDetails">
+        <div style="display: flex;
+        padding-top: 40px;">
+        <div class="important">*</div>
+        <div style="margin-left: 10px;
+font-size: 20px;">indicates required fields</div>
+    </div>
+      <!-- details of user's firstname and lastname -->
+        <div class="firstName">
+            <div class="important">*</div>
+            <div class="first-text">Id</div>
+          <input type="text" formControlName="sid" id="sid" class="studentId first-name" placeholder="Enter id" mValidateOnBlur required/>
+        </div>
+        <div  class="firstName">
+            <div class="important">*</div>
+            <div class="first-text">Name</div>
+          <input type="text" formControlName="sname" id="sname" class="studentName first-name" placeholder="Enter name"
+            mValidateOnBlur />
+        </div>
+
+    
+        
+        <!-- user input for address -->
+
+        <div class="firstName">
+            <div class="important">*</div>
+            <div class="first-text">Address</div>
+            <div> <input type="text" formControlName="saddress" id="saddress" class="studentAddress street-address" placeholder="#2199 jermantown rd" mValidateOnBlur
+                    required/>
+            </div>
+        </div>
+
+          <!--user input for state, city and zip-->
+
+          <div class="firstName">
+              <div class="city-detail">
+               <div class="important">*</div>
+                  <div class="first-text">Zip</div>
+                  <div> <input type="number" formControlName="szip" id="szip" class="szip city" placeholder="zip" mValidateOnBlur required/>
+                  </div>
+                   <div id="zip-err" class="error-msg zip-err-msg" style="margin-top: 43px;
+width: 231px;
+margin-left: 60px;display:none;"></div>
+              <div class="state-detail">
+                  <div class="important">*</div>
+                  <div class="first-text">City</div>
+                  <div id="city"><input type="text" formControlName="scity" id="scity" class="scity city" placeholder="city" autocomplete="on" mValidateOnBlur required/> </div>
+                  </div>
+
+                  <div class="state-detail">
+                  <div class="important">*</div>
+                  <div class="first-text">State</div>
+                  <div id="state"><input type="text" formControlName="sstate" id="sstate" class="sstate city" placeholder="state" autocomplete="on" mValidateOnBlur required/> </div>
+                  </div>
+
+              </div>
+          </div>
+
+            <!-- user input for telephone number -->
+
+            <div class="firstName">
+                <div class="important">*</div>
+                <div class="first-text">Telephone number</div>
+                <div> <input type="tel" formControlName="stel" id="stel" class="stel first-name" placeholder="Enter phone number" mValidateOnBlur autocomplete="on"
+                        formnovalidate required />
+                </div>
+            </div>
+
+              <!-- user input for email address -->
+
+              <div class="firstName">
+                  <div class="important">*</div>
+                  <div class="first-text">Email</div>
+                  <div> <input type="email" formControlName="semail"  id="semail" class="semail first-name" placeholder="abcd@gmail.com" mValidateOnBlur autocomplete="on"
+                          formnovalidate required />
+                  </div>
+              </div>
+
+               <!-- user input for date of survey -->
+
+              <div class="firstName">
+                      <div class="important">*</div>
+                      <div class="first-text">Date of Survey</div>
+                      <div> <input type="date" formControlName="sdate" id="sdate" class="sdate first-name"  placeholder="Enter Date of survey" mValidateOnBlur autocomplete="on"
+                              formnovalidate required />
+                      </div>
+                  </div>
+
+              <!-- user input for url -->
+
+              <div class="firstName">
+                  <div class="important">*</div>
+                  <div class="first-text">Url</div>
+                  <div> <input type="url" id="url" formControlName="surl" id="surl" class="surl first-name"  placeholder="https://www.abcd.com/" mValidateOnBlur autocomplete="on"
+                          formnovalidate required />
+                  </div>
+              </div>
+
+               <!-- user input for graduation month -->
+
+               <div class="firstName">
+                  <div class="important">*</div>
+                  <div class="first-text">Graduation Month</div>
+                  <div> <input list="grad_month" formControlName="sgradmonth" id="sgradmonth" class="sgradmonth first-name" placeholder="Enter graduation month" mValidateOnBlur
+                          autocomplete="on" formnovalidate required />
+                  </div>
+
+                  <datalist id="grad_month">
+                      <option value="January">
+                      <option value="Febuary">
+                      <option value="March">
+                      <option value="April">
+                      <option value="May">
+                      <option value="June">
+                      <option value="July">
+                      <option value="August">
+                      <option value="September">
+                      <option value="October">
+                      <option value="November">
+                      <option value="December">
+                  </datalist>
+
+              </div>
+
+              <!-- user input for graduation year -->
+
+              <div class="firstName">
+                  <div class="important">*</div>
+                  <div class="first-text">Graduation Year</div>
+                  <div> <input type="text" formControlName="sgradyear" id="sgradyear" class="sgradyear first-name" placeholder="Enter graduation year" mValidateOnBlur
+                          autocomplete="on" formnovalidate required />
+                  </div>
+              </div>
+
+
+<!-- state of checkbox -->
+<div class="check-box">
+    <div class="first-text">Select what you like the most in campus</div>
+    <div class="checkBox">
+        <input type="checkbox" class="check" name="check1" id="check1n" value="students"><label for="check1n">students</label><br>
+        <input type="checkbox" class="check" name="check2" id="check2n" value="location"><label for="check2n">location</label><br>
+        <input type="checkbox" class="check" name="check3" id="check3n" value="campus"><label for="check3n">campus</label><br>
+        <input type="checkbox" class="check" name="check4" id="check4n" value="atmosphere"><label for="check4n">atmosphere</label><br>
+        <input type="checkbox" class="check" name="check5" id="check5n" value="dormrooms"><label for="check5n">dormrooms</label><br>
+        <input type="checkbox" class="check" name="check6" id="check6n" value="sports"><label for="check6n">sports</label><br>
+    </div>
+</div>
+
+
+ <!-- this part consists of the radio buttons -->
+ <div class="radioBtns">
+    <div class="first-text">How you became aware of this university?</div>
+    <div class="checkBox">
+        <input type="radio" formControlName="radioBtn" name="radioBtn" id="radio1" value="friends"><label for="radio1">Friends</label>
+        <input type="radio" formControlName="radioBtn" name="radioBtn" value="television" id="radio2"><label for="radio2">Television</label>
+        <input type="radio" formControlName="radioBtn" name="radioBtn" value="internet"  id="radio3"><label for="radio3">Internet</label>
+        <input type="radio" formControlName="radioBtn" name="radioBtn" value="other" id="radio4"><label for="radio4">Other</label>
+    </div>
+</div>
+<!-- this part consists of dropdown -->
+<div class="radioBtns">
+    <div class="first-text">How likely would you recommend this school?</div>
+    <div class="dropDown">
+        <select formControlName="likeliness">
+            <option value="very likely">Very Likely</option>
+            <option value="likely">Likely</option>
+            <option value="unlikely">Unlikely</option>
+        </select>
+    </div>
+</div>
+
+<!--10 comma seperated numbers display-->
+
+<div style="padding-top:20px;">
+<div class="first-text">Enter 10 comma seperated values from 1 to 100 inclusive</div>
+              <div class="raffle-box">
+                  <input type="text" formControlName="raffle" class="raffle" id="raffle" name="data"
+                      
+                      title="To win a price enter 10 comma separated numbers between 1 to 100" 
+                      formnovalidate/>
+              </div>
+              </div>
+
+               <!-- this part contains the text area -->
+               <div class="radioBtns">
+                  <div class="first-text comments">Additional Comments</div>
+                  <textarea rows="6" cols="70" formControlName="comments" placeholder="Additional Comments">
+</textarea>
+              </div>
+
+
+
+        <button (click)="submit()"  class="submit button--orange-red start-button margin-right--20" style="margin-top:20px;margin-bottom:20px;" id="schedule" type="button"
+          value="SCHEDULE">SCHEDULE</button>
+      </div>
+      </div>
+    </div>
+    </div>
+  </form>
+
+</body>
+
+
+<!--Simple acknowledgement display-->
+
+<div *ngIf="showSimpleAcknowledgement">
+    <h2>Thankyou for submitting the form. Your response is stored successfully</h2>
+    <div>Mean is {{mean}}</div>
+    <div>Standard deviation is {{sd}}</div>
+  <table border="1">
+    <tr>
+      <th>StudentId</th>
+    </tr>
+    <tr *ngFor="let id of students">
+      <td><a [routerLink]="['/stdDetail', id]">{{id}}</a></td>
+    </tr>
+  </table>
+</div>
+
+<!--winner acknowledgement display-->
+
+<div *ngIf="showWinnerAcknowledgement">
+  <h2>Congratulations on winning 2 raffle tickets</h2>
+  <div>Mean is {{mean}}</div>
+    <div>Standard deviation is {{sd}}</div>
+    <table border="1">
+      <tr>
+        <th>StudentId</th>
+      </tr>
+      <tr *ngFor="let id of students">
+          <td><a [routerLink]="['/stdDetail', id]">{{id}}</a></td>
+      </tr>
+    </table>
+  </div>
+
+<router-outlet></router-outlet>

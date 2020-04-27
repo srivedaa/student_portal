@@ -1,0 +1,127 @@
+.page-container{
+    display:flex;
+    height: 100%;
+    background-color: #d0e1f982;
+}
+
+.sidebar{
+    height: 100%;
+    width:235px;
+    background-color: #283655
+}
+.portal_heading{
+    position: relative;
+  background-color: #36506f;
+  width: 235px;
+}
+.portal_text{
+    position: absolute;
+    top: 31px;
+    font-size: 21px;
+    left: 17px;
+    color: white;
+    font-weight: 200;
+    font-family: Verdana;
+    opacity: 0.8;
+    margin-left: 20px;
+    text-align: center;
+}
+.grad_img{
+    opacity: 0.1;
+    width:235px;
+    height: 85px;
+}
+.icons{
+    background-color: #283655;
+    opacity: 0.9;
+    width: 235px;
+    height: 713px;
+}
+.menu_desc{
+    display: flex;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+.menu_icon{
+    width: 30px;
+    height: 25px;
+    opacity: 0.7;
+}
+.menu_text{
+    color: white;
+    font-family: Verdana;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-top: 3px;
+    opacity: 0.5;
+    font-weight: 200;
+}
+.dashboard_icon{
+    width: 30px;
+    height: 25px;
+    opacity: 0.7;
+}
+.border{
+    border: 2px solid white;
+    opacity: 0.1;
+    margin-top: 15px;
+}
+.subjects, .blocks{
+    margin-top:20px;
+}
+.block_subject{
+    font-size: 13px;
+    margin-left:0px;
+}
+.block1{
+    width: 23px;
+    margin-left: 25px;
+    margin-top: 4px;
+    color: #FFC107;
+}
+.portal_profile{
+    background-color: white;
+    height: 89px;
+    width: 1202px;
+}
+.search_text{
+    width: 340px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    position: relative;
+}
+.searchbar{
+    width: 340px;
+    border: none;
+    padding: 8px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c4c9e078;
+    font-size: 15px;
+    font-family: Verdana;
+    outline: none;
+    opacity:0.8;
+}
+.studentprofile{
+    margin-left: 655px;
+    display: flex;
+    margin-top: 24px;
+}
+.name{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: Verdana;
+    font-size: 16px;
+    opacity: 0.6;
+    font-weight: 600;
+    color: #36506f;
+}
+.page-content-container{
+    margin-top:100px;
+}
+.share{
+    margin-top: 90px;
+    margin-left: 15px;
+    display:flex;
+}
+

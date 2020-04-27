@@ -1,0 +1,37 @@
+.portal_profile{
+    background-color: white;
+    height: 89px;
+    width: 1202px;
+}
+.search_text{
+    width: 340px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    position: relative;
+}
+.searchbar{
+    width: 340px;
+    border: none;
+    padding: 8px 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #c4c9e078;
+    font-size: 15px;
+    font-family: Verdana;
+    outline: none;
+    opacity:0.8;
+}
+.studentprofile{
+    margin-left: 405px;
+    display: flex;
+    margin-top: 24px;
+}
+.name{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: Verdana;
+    font-size: 16px;
+    opacity: 0.6;
+    font-weight: 600;
+    color: #36506f;
+}

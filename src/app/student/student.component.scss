@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+.cslogo{
+	text-align:center;
+}
+.csText{
+	font-size: 18px!important;
+    color: #2e4242!important;
+    width: 900px!important;
+    padding: 10px 10px!important;
+}
+.surveyDetails {
+	background: #c3c3c3;
+	padding-bottom: 30px;
+}
+.surveyForm {
+	text-align: center;
+	font-family: sans-serif;
+	color: blue;
+	border: 5px solid blue;
+    margin: 0 auto;
+}
+.survey-Details {
+	background: white;
+    width: 1027px;
+    margin: 0 auto;
+    border: 1.5px solid darkgray;
+}
+.nameDetails{
+	 margin-left: 40px;
+}
+.firstName{
+ padding-top: 25px;
+    display: flex;
+   }
+   .important{
+   color:red;
+   margin-top: 8px;
+   }
+.first-text{
+	color: steelblue;
+   font-size: 15px;
+    margin-top: 7px;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-left: 5px;
+   }
+.first-name, .street-address, .city {
+   border: 0.4px solid #C3C3C3;
+    padding: 11px 13px;
+    font-size: 15px;
+    margin-left: 20px;
+    width: 210px;
+    }
+.street-address{
+	width: 310px;
+	margin-left: 35px;
+}
+.city-detail, .state-detail{
+	display:flex;
+}
+.state-detail {
+	margin-left: 20px
+}
+.check-box, .radioBtns{
+	padding-top: 25px;
+}
+.checkBox{
+	padding-top:10px;
+}
+.check{
+	width: 20px;
+	font-family: sans-serif;
+}
+.dropDown{
+	padding-top:15px;
+}
+.raffle{
+    padding: 11px 9px;
+    font-size: 15px;
+    width: 300px;
+}
+.submit{
+	font-size: 18px;
+    border-radius: 50px;
+    padding: 8px 18px;
+    border: 2px solid orange;
+    outline: none;
+    cursor: pointer;
+}
+.cancel{
+	 border: 2px solid gray;
+	 margin-left:15px;
+}
+.btn{
+	padding-bottom: 30px;
+}
+.comments {
+	padding-bottom: 15px;
+}
+.raffle-box {
+	padding-top: 10px;
+	display: flex;
+}
+.gmu_img {
+	float:right;
+}
+.error-msg {
+	font-size: .83333vw;
+    color: #fafafa;
+    letter-spacing: 0;
+    line-height: 1.25vw;
+    position: absolute;
+    background: #ff5d4f;
+    margin-top: 3px;
+    padding: 0 3px;
+    width: 316px;
+}
+.firstname-err{
+	margin-left: 120px;
+    width: 232px;
+}
+.cookieDisplay{
+height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 12;
+    background: rgba(0,0,0,.6);
+}
+
