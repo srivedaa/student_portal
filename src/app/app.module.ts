@@ -16,6 +16,9 @@ import { HeadingComponent } from './heading/heading.component';
 
 const appRoutes: Routes = [
   {
+    path:'',component:DashboardComponent
+  },
+  {
     path:'dashboard',component:DashboardComponent
   },
   {path:'stdDetail/:id',component:StddetailsComponent},
