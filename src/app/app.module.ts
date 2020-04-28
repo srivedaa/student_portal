@@ -13,6 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { HeadingComponent } from './heading/heading.component';
+import { TaskComponent } from './task/task.component';
+import { DiscussionComponent } from './discussion/discussion.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +23,13 @@ const appRoutes: Routes = [
   {
     path:'dashboard',component:DashboardComponent
   },
+  {
+    path:'task',component:TaskComponent
+  },
+  {
+    path:'discussion',component:DiscussionComponent
+  },
+  { path:"assignment1a", redirectTo: '/assets/1A.pdf' },
   {path:'stdDetail/:id',component:StddetailsComponent},
   {path:'survey',component:StudentComponent}
 ]
@@ -33,6 +42,8 @@ const appRoutes: Routes = [
     DashboardComponent,
     HeaderComponent,
     HeadingComponent,
+    TaskComponent,
+    DiscussionComponent,
   ],
   imports: [
     BrowserModule,
